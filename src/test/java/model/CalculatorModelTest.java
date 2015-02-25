@@ -9,6 +9,7 @@ import model.DivideByZero;
 import org.junit.Before;
 import org.junit.Test;
 
+/*Test del modelo de la calculadora*/
 public class CalculatorModelTest {
     I_CalculatorModel myCalc;
 
