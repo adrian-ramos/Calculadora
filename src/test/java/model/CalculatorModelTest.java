@@ -37,6 +37,7 @@ public class CalculatorModelTest {
         assertTrue(myCalc.getResult() == 0);
     }
 
+    /* Comment master*/
     // --------------------------------------------------------	
     @Test
     public void t01add01() throws Exception {
