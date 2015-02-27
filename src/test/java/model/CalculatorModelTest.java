@@ -37,7 +37,7 @@ public class CalculatorModelTest {
         assertTrue(myCalc.getResult() == 0);
     }
 
-    /* Comment master*/
+    /* Comment master prueba Git Remoto*/
     // --------------------------------------------------------	
     @Test
     public void t01add01() throws Exception {
