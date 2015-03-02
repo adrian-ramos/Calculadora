@@ -58,4 +58,38 @@ public class MyStepdefs {
     public void el_resultado_es_un_error() throws Throwable {
         assertTrue(_error != null);
     }
+    //-----------------------------------------------------------------
+
+    @Given("^Calculadora con un rango de valores$")
+    public void Calculadora_con_un_rango_de_valores() throws Throwable {
+        _model = new CalculatorModel(-10,20);
+        _error = null;
+    }
+
+    @When("^Cuando supera el límite inferior$")
+    public void Cuando_supera_el_límite_inferior() throws Throwable {
+        try {
+            _model.setResult(-10);
+            _model.subtract(1);
+        } catch (Exception e) {
+            _error = e;
+        }
+    }
+
+    @When("^Cuando supera el límite superior$")
+    public void Cuando_supera_el_límite_superior() throws Throwable {
+        try {
+            _model.setResult(20);
+            _model.add(1);
+        } catch (Exception e) {
+            _error = e;
+        }
+    }
+
+    @Then("^La calculadora nos muestra un error$")
+    public void La_calculadora_nos_muestra_un_error() throws Throwable {
+        assertTrue(_error != null);
+    }
+
+
 }
