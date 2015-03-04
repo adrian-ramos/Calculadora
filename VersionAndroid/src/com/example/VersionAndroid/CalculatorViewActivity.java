@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import presenter.I_CalculatorPresenter;
-
+//ESTOY AKI!!! BITCHES!!
 public class CalculatorViewActivity extends Activity implements I_CalculatorView, OnClickListener {
 	private EditText _display;
     private I_CalculatorPresenter _presenter;
